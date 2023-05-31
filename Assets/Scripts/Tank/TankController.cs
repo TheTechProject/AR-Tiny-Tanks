@@ -11,11 +11,15 @@ public class TankController : MonoBehaviour
     public float moveSpeed = 10.0f;
     public float turnSpeed = 5.0f;
 
+    private Rigidbody rigidbody;
+
     // Start is called before the first frame update
     void Start()
     {
         moveAction.Enable();
         turnAction.Enable();
+
+        rigidbody = gameObject.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -31,9 +35,9 @@ public class TankController : MonoBehaviour
     private void Move()
     {
         var moveDirection = moveAction.ReadValue<float>();
-        Vector3 V3MoveDirection = transform.right * moveDirection;
+        Vector3 V3MoveDirection = transform.right * moveDirection * moveSpeed;
         //Debug.Log(moveDirection);
-        transform.position += V3MoveDirection * moveSpeed * Time.deltaTime;
+        rigidbody.AddForce(V3MoveDirection);
     }
 
     /// <summary>

@@ -9,29 +9,32 @@ public class ShellManager : MonoBehaviour
     [SerializeField] private float shellLife = 5.0f;
     private float timer;
 
-    private Vector3 velocity;
+    private Rigidbody rigidbody;
 
-    // Start is called before the first frame update
-    void Start()
+    //private Vector3 velocity;
+
+    private void OnEnable()
     {
-        velocity = transform.right;
+        rigidbody = GetComponent<Rigidbody>();
+        rigidbody.velocity = transform.right * shellSpeed;
+        timer = 0.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += velocity * shellSpeed * Time.deltaTime;
+        //transform.position += velocity * shellSpeed * Time.deltaTime;
 
         timer += Time.deltaTime;
         if (timer >= shellLife)
-            GameObject.Destroy(gameObject);
+            gameObject.SetActive(false);
     }
 
-    private void OnCollisionEnter(Collision collision)
+    /*private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Wall"))
         {
             velocity = Vector3.Reflect(velocity, Vector3.right);
         }
-    }
+    }*/
 }
