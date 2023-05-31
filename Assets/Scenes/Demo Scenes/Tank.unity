@@ -1947,7 +1947,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &386242137
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2269,10 +2269,8 @@ MonoBehaviour:
   m_VersionIndex: 4635
   m_IsSelectable: 1
   m_SelectedFaces: 
-  m_SelectedEdges:
-  - a: 5
-    b: 3
-  m_SelectedVertices: 0500000003000000
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!4 &386242142
 Transform:
   m_ObjectHideFlags: 0
@@ -2653,7 +2651,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-25220
+  m_Name: pb_Mesh24522
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4002,7 +4000,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-13392
+  m_Name: pb_Mesh24596
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4180,7 +4178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1126753121
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4474,7 +4472,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1232827715
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4952,7 +4950,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-17340
+  m_Name: pb_Mesh24636
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5797,7 +5795,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1319934116
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6996,7 +6994,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-22206
+  m_Name: pb_Mesh24582
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7263,6 +7261,7 @@ GameObject:
   - component: {fileID: 2101955009}
   - component: {fileID: 2101955012}
   - component: {fileID: 2101955011}
+  - component: {fileID: 2101955013}
   m_Layer: 0
   m_Name: Tank
   m_TagString: Untagged
@@ -7415,3 +7414,15 @@ MonoBehaviour:
       m_Action: Fire
       m_Flags: 0
     m_Flags: 0
+--- !u!114 &2101955013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2101955008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d53ea2ab6ba392f49a1a6ddd24912ec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
